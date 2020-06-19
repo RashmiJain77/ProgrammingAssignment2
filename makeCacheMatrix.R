@@ -34,3 +34,27 @@ cacheSolve<- function(x, ...){
      inv
   
 }
+
+## Checking my program
+>  pmatrix$set(matrix(c(7, 4, 1, 2), 2, 2))
+> pmatrix$get()
+     [,1] [,2]
+[1,]    7    1
+[2,]    4    2
+> pmatrix$getInverse()
+NULL
+> cacheSolve(pmatrix)
+     [,1] [,2]
+[1,]  0.2 -0.1
+[2,] -0.4  0.7
+> cacheSolve(pmatrix)
+getting cache data
+     [,1] [,2]
+[1,]  0.2 -0.1
+[2,] -0.4  0.7
+> cacheSolve(pmatrix)
+getting cache data
+     [,1] [,2]
+[1,]  0.2 -0.1
+[2,] -0.4  0.7
+> 
